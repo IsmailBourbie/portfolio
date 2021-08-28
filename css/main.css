@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -16068,18 +16069,56 @@ readers do not read off random characters that represent icons */
   content: "";
 }
 
-.navbar {
-  background-color: #15c76c;
+body {
+  color: #161a1d;
 }
+
 .navbar li.nav-item {
   margin-left: 30px;
 }
 .navbar li.nav-item a.nav-link {
-  color: #ffffff;
+  color: #161a1d;
 }
 .navbar li.nav-item a.nav-link:hover {
-  opacity: 0.5;
-  color: #ffffff;
+  opacity: 0.8;
+  color: #15c76c;
+}
+
+.landing-page .row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page .row .welcome h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 1px;
+  font-family: "Kanit", sans-serif;
+}
+.landing-page .row .welcome h3 {
+  letter-spacing: 1px;
+  color: #15c76c;
+  margin-left: 10px;
+}
+.landing-page .row .welcome p {
+  color: #8c8c8e;
+  margin: 40px 0 40px 10px;
+}
+
+@media (max-width: 992px) {
+  .welcome {
+    text-align: center;
+  }
+  .welcome h1 {
+    font-size: 28px !important;
+  }
+  .welcome h3 {
+    font-size: 18px;
+  }
+  .welcome p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

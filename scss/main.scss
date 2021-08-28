@@ -1,20 +1,59 @@
 @import "mixins";
 @import "bootstrap-custom";
 @import "fontawesome-custom";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
 
+body {
+    color: $dark;
+}
 // Navbar start
 .navbar {
-    background-color: $primary;
 
     li.nav-item {
         margin-left: 30px;
         a.nav-link {
-            color: $white;
+            color: $dark;
             &:hover{
-                opacity: .5;
-                color: $white;
+                opacity: .8;
+                color: $green;
             }
         }
     }
 }
 // Navbar End
+// Landing page Start
+.landing-page {
+    .row {
+        > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .welcome {
+            h1 {
+                font-size: 60px;
+                font-weight: bold;
+                margin: 0;
+                letter-spacing: 1px;
+                font-family: 'Kanit', sans-serif;
+            }
+            h3 {
+                letter-spacing: 1px;
+                color: $green;
+                margin-left: 10px;
+             }
+            p {
+                color: #8c8c8e;
+                margin: 40px 0 40px 10px;
+             }
+        }
+    }
+}
+// Landing page End
+
+
+
+
+
+@import "responsive";
