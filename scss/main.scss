@@ -2,9 +2,11 @@
 @import "bootstrap-custom";
 @import "fontawesome-custom";
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 body {
     color: $dark;
+    font-family: 'Raleway', sans-serif;
 }
 // Navbar start
 .navbar {
@@ -21,6 +23,7 @@ body {
     }
 }
 // Navbar End
+
 // Landing page Start
 .landing-page {
     .row {
@@ -52,7 +55,79 @@ body {
 }
 // Landing page End
 
+// About Start
 
+.about {
+    height: 800px;
+    background-color: $gray-100;
+    padding-top: 80px;
+    .header {
+        h2 {
+            position: relative;
+            margin-top: -7px;
+            margin-bottom: 0;
+            padding-bottom: 18px;
+            font-size: 36px;
+            line-height: 41px;
+            font-weight: bold;
+            &::before{
+                bottom: 0;
+                width: 100px;
+                padding: 4px 0 5px;
+                border-style: solid;
+                border-width: 1px 0;
+                border-color: #737373;
+                content: " ";
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+            &::after {
+                bottom: 5px;
+                width: 200px;
+                height: 1px;
+                background-color: #303030;
+                content: " ";
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .main {
+        margin: 80px 0 ;
+        h4 {
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 14px
+        }
+        .my-cv {
+            margin-top: 50px;
+            a {
+                background-color: $green;
+                padding: 20px 30px;
+                color: $white;
+                &:hover {
+                    text-decoration: none;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+    
+}
+
+// About End 
+
+
+// my Framework
+ strong {
+     color: $green;
+ }
 
 
 

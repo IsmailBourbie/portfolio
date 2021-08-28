@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -26,7 +27,7 @@
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #ff4136;
-  --light: #f8f9fa;
+  --light: #f8fafc;
   --dark: #161a1d;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -1819,21 +1820,21 @@ pre code {
 .table-light,
 .table-light > th,
 .table-light > td {
-  background-color: #fdfdfe;
+  background-color: #fdfefe;
 }
 .table-light th,
 .table-light td,
 .table-light thead th,
 .table-light tbody + tbody {
-  border-color: #fbfcfc;
+  border-color: #fbfcfd;
 }
 
 .table-hover .table-light:hover {
-  background-color: #ececf6;
+  background-color: #ecf6f6;
 }
 .table-hover .table-light:hover > td,
 .table-hover .table-light:hover > th {
-  background-color: #ececf6;
+  background-color: #ecf6f6;
 }
 
 .table-dark,
@@ -2603,32 +2604,32 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #8c8c8e;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #f8fafc;
+  border-color: #f8fafc;
 }
 .btn-light:hover {
   color: #8c8c8e;
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
+  background-color: #dde7f1;
+  border-color: #d4e1ed;
 }
 .btn-light:focus, .btn-light.focus {
   color: #8c8c8e;
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
-  box-shadow: 0 0 0 0.2rem rgba(232, 233, 234, 0.5);
+  background-color: #dde7f1;
+  border-color: #d4e1ed;
+  box-shadow: 0 0 0 0.2rem rgba(232, 234, 236, 0.5);
 }
 .btn-light.disabled, .btn-light:disabled {
   color: #8c8c8e;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #f8fafc;
+  border-color: #f8fafc;
 }
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
   color: #8c8c8e;
-  background-color: #dae0e5;
-  border-color: #d3d9df;
+  background-color: #d4e1ed;
+  border-color: #cbdae9;
 }
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(232, 233, 234, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(232, 234, 236, 0.5);
 }
 
 .btn-dark {
@@ -2812,28 +2813,28 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #f8fafc;
+  border-color: #f8fafc;
 }
 .btn-outline-light:hover {
   color: #8c8c8e;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #f8fafc;
+  border-color: #f8fafc;
 }
 .btn-outline-light:focus, .btn-outline-light.focus {
-  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(248, 250, 252, 0.5);
 }
 .btn-outline-light.disabled, .btn-outline-light:disabled {
-  color: #f8f9fa;
+  color: #f8fafc;
   background-color: transparent;
 }
 .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle {
   color: #8c8c8e;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #f8fafc;
+  border-color: #f8fafc;
 }
 .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(248, 250, 252, 0.5);
 }
 
 .btn-outline-dark {
@@ -4751,15 +4752,15 @@ a.badge-danger:focus, a.badge-danger.focus {
 
 .badge-light {
   color: #8c8c8e;
-  background-color: #f8f9fa;
+  background-color: #f8fafc;
 }
 a.badge-light:hover, a.badge-light:focus {
   color: #8c8c8e;
-  background-color: #dae0e5;
+  background-color: #d4e1ed;
 }
 a.badge-light:focus, a.badge-light.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(248, 250, 252, 0.5);
 }
 
 .badge-dark {
@@ -4894,15 +4895,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-light {
-  color: #818182;
+  color: #818283;
   background-color: #fefefe;
-  border-color: #fdfdfe;
+  border-color: #fdfefe;
 }
 .alert-light hr {
-  border-top-color: #ececf6;
+  border-top-color: #ecf6f6;
 }
 .alert-light .alert-link {
-  color: #686868;
+  color: #686969;
 }
 
 .alert-dark {
@@ -4992,7 +4993,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   z-index: 1;
   color: #495057;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #f8fafc;
 }
 .list-group-item-action:active {
   color: #8c8c8e;
@@ -5247,17 +5248,17 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-light {
-  color: #818182;
-  background-color: #fdfdfe;
+  color: #818283;
+  background-color: #fdfefe;
 }
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-  color: #818182;
-  background-color: #ececf6;
+  color: #818283;
+  background-color: #ecf6f6;
 }
 .list-group-item-light.list-group-item-action.active {
   color: #ffffff;
-  background-color: #818182;
-  border-color: #818182;
+  background-color: #818283;
+  border-color: #818283;
 }
 
 .list-group-item-dark {
@@ -6096,13 +6097,13 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #f8fafc !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
-  background-color: #dae0e5 !important;
+  background-color: #d4e1ed !important;
 }
 
 .bg-dark {
@@ -6188,7 +6189,7 @@ button.bg-dark:focus {
 }
 
 .border-light {
-  border-color: #f8f9fa !important;
+  border-color: #f8fafc !important;
 }
 
 .border-dark {
@@ -9775,11 +9776,11 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light {
-  color: #f8f9fa !important;
+  color: #f8fafc !important;
 }
 
 a.text-light:hover, a.text-light:focus {
-  color: #cbd3da !important;
+  color: #c2d4e5 !important;
 }
 
 .text-dark {
@@ -16071,6 +16072,7 @@ readers do not read off random characters that represent icons */
 
 body {
   color: #161a1d;
+  font-family: "Raleway", sans-serif;
 }
 
 .navbar li.nav-item {
@@ -16104,6 +16106,70 @@ body {
 .landing-page .row .welcome p {
   color: #8c8c8e;
   margin: 40px 0 40px 10px;
+}
+
+.about {
+  height: 800px;
+  background-color: #f8fafc;
+  padding-top: 80px;
+}
+.about .header h2 {
+  position: relative;
+  margin-top: -7px;
+  margin-bottom: 0;
+  padding-bottom: 18px;
+  font-size: 36px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.about .header h2::before {
+  bottom: 0;
+  width: 100px;
+  padding: 4px 0 5px;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #737373;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.about .header h2::after {
+  bottom: 5px;
+  width: 200px;
+  height: 1px;
+  background-color: #303030;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.about .main {
+  margin: 80px 0;
+}
+.about .main h4 {
+  margin-bottom: 30px;
+}
+.about .main p {
+  font-size: 14px;
+}
+.about .main .my-cv {
+  margin-top: 50px;
+}
+.about .main .my-cv a {
+  background-color: #15c76c;
+  padding: 20px 30px;
+  color: #ffffff;
+}
+.about .main .my-cv a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+strong {
+  color: #15c76c;
 }
 
 @media (max-width: 992px) {
