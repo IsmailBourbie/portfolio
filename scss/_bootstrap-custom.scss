@@ -1,0 +1,16 @@
+@import "myVariables";
+// Customization
+
+
+// Body settings
+$body-bg :    $white;
+
+$theme-colors: (
+    "primary": #080,
+    "danger": #ff4136
+  );
+
+// Import bootstrap
+
+@import "../lib/css/bootstrap/bootstrap";
+// @import "../lib/css/fontawsome/fontawesome";

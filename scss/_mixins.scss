@@ -1,0 +1,13 @@
+@mixin WH-size100($w:100%, $h:100%) {
+    width: $w;
+    height: $h;
+}
+
+@mixin  reset-spaces($p) {
+    @if($p == "padding") {
+        padding: 0;
+    } @else {
+        margin: 0;
+    }
+    
+}
