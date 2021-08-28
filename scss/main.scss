@@ -1,3 +1,20 @@
 @import "mixins";
 @import "bootstrap-custom";
 @import "fontawesome-custom";
+
+// Navbar start
+.navbar {
+    background-color: $primary;
+
+    li.nav-item {
+        margin-left: 30px;
+        a.nav-link {
+            color: $white;
+            &:hover{
+                opacity: .5;
+                color: $white;
+            }
+        }
+    }
+}
+// Navbar End
