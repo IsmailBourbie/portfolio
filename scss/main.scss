@@ -61,7 +61,6 @@ body {
 
 .about {
     background-color: $gray-100;
-    padding: 80px 0;
     @include section-header;
 
     .main {
@@ -170,7 +169,6 @@ body {
 
 .services {
     color: $white;
-    padding: 80px;
     padding-bottom: 0px;
     @include section-header($white);
     position: relative;
@@ -211,12 +209,58 @@ body {
 
 // Services End
 
+// Works Start
+
+.works {
+    @include section-header();
+    .button-list {
+        text-align: center;
+        padding: 40px 0 20px;
+        ul li {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 28px;
+            padding: 5px 15px;
+            color: $dark;
+            border: 1px solid $green;
+            min-width: 80px;
+            margin-right: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            &:hover {
+                background-color: $green;
+                color: $white;
+            }
+            &.active {
+                background-color: $green;
+                border: 1px solid #009e4e;
+                color: #fff;
+            }
+          }
+      }
+
+      .shuffle-img .row > div {
+        margin-bottom: 15px;
+        transition: all .3s ease-in-out;
+        > img {
+            width: 100%;
+        }
+      }
+
+}
+
+// Works End
+
 
 // my Framework
  strong {
      color: $green;
  }
-
+section {
+    padding: 80px 0;
+}
 
 
 @import "responsive";
