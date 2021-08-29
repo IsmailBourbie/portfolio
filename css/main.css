@@ -16167,6 +16167,30 @@ body {
   text-decoration: none;
   opacity: 0.8;
 }
+.about .main .about-progress-bar h5 {
+  font-size: 16px;
+}
+.about .main .about-progress-bar .progress {
+  overflow: visible;
+  margin-bottom: 15px;
+}
+.about .main .about-progress-bar .progress .progress-bar {
+  overflow: visible;
+  background-color: #15c76c;
+  position: relative;
+}
+.about .main .about-progress-bar .progress .progress-bar span {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  width: 30px;
+  height: 20px;
+  background-color: #15c76c;
+  padding: 10px 5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #000000;
+}
 
 strong {
   color: #15c76c;
