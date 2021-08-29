@@ -16073,6 +16073,7 @@ readers do not read off random characters that represent icons */
 body {
   color: #161a1d;
   font-family: "Raleway", sans-serif;
+  height: 2400px;
 }
 
 .navbar li.nav-item {
@@ -16110,9 +16111,13 @@ body {
 
 .about {
   background-color: #f8fafc;
-  padding-top: 80px;
+  padding: 80px 0;
+}
+.about .header {
+  margin-bottom: 80px;
 }
 .about .header h2 {
+  color: #161a1d;
   position: relative;
   margin-top: -7px;
   margin-bottom: 0;
@@ -16127,7 +16132,7 @@ body {
   padding: 4px 0 5px;
   border-style: solid;
   border-width: 1px 0;
-  border-color: #737373;
+  border-color: #161a1d;
   content: " ";
   position: absolute;
   left: 0;
@@ -16138,15 +16143,12 @@ body {
   bottom: 5px;
   width: 200px;
   height: 1px;
-  background-color: #303030;
+  background-color: #161a1d;
   content: " ";
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
-}
-.about .main {
-  margin: 80px 0;
 }
 .about .main .about-who-am-i {
   padding-right: 15px;
@@ -16236,6 +16238,82 @@ body {
 }
 .about .main .about-info .col-8 p {
   font-size: 12px;
+}
+
+.services {
+  color: #ffffff;
+  padding: 80px;
+  padding-bottom: 0px;
+  position: relative;
+  background-image: url("../img/services-cover.jpg");
+  background-size: cover;
+}
+.services .header {
+  margin-bottom: 80px;
+}
+.services .header h2 {
+  color: #ffffff;
+  position: relative;
+  margin-top: -7px;
+  margin-bottom: 0;
+  padding-bottom: 18px;
+  font-size: 36px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.services .header h2::before {
+  bottom: 0;
+  width: 100px;
+  padding: 4px 0 5px;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #ffffff;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.services .header h2::after {
+  bottom: 5px;
+  width: 200px;
+  height: 1px;
+  background-color: #ffffff;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.services .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 48, 48, 0.95);
+}
+.services .item {
+  margin-bottom: 60px;
+}
+.services .item .service-icon {
+  float: left;
+  width: 45px;
+  font-size: 35px;
+  line-height: 1.2;
+  text-align: center;
+  color: #15c76c;
+}
+.services .item .service-content {
+  margin-left: 60px;
+}
+.services .item .service-content h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.services .item .service-content p {
+  font-size: 14px;
+  color: #e9e9e9;
 }
 
 strong {
