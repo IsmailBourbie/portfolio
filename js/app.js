@@ -22,4 +22,16 @@ $(document).ready(function () {
         }
 
     });
+
+
+    // Show Description of works 
+    $('.works-item').mouseenter(function () {
+        $(this).children('.works-description').show(200);
+
+    });
+
+    $('.works-item').mouseleave(function () {
+        $(this).children('.works-description').hide(200);
+    });
+
 });

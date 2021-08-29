@@ -241,12 +241,51 @@ body {
           }
       }
 
-      .shuffle-img .row > div {
-        margin-bottom: 15px;
-        transition: all .3s ease-in-out;
-        > img {
-            width: 100%;
-        }
+      .shuffle-img {
+          .row > div {
+            margin-bottom: 15px;
+            transition: all .3s ease-in-out;
+            > img {
+                width: 100%;
+            }
+         }
+         .works-description {
+             display: none;
+             > div {
+                color: $white;
+                position: absolute;
+                background-color: rgba(48, 48, 48, 0.95);
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+             }
+            .description-wrapper {
+                padding: 50px;
+                h2 {
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 14px;
+                    margin-bottom: 35px;
+                }
+
+                a {
+                    color: $white;
+                    padding: 10px 20px;
+                    border: 1px solid $white;
+                    &:hover {
+                        text-decoration: none;
+                        background-color: $green;
+                        border: 2px solid #009e4e;
+
+                    }
+                }
+            }
+         }
       }
 
 }

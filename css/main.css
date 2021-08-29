@@ -16384,6 +16384,41 @@ body {
 .works .shuffle-img .row > div > img {
   width: 100%;
 }
+.works .shuffle-img .works-description {
+  display: none;
+}
+.works .shuffle-img .works-description > div {
+  color: #ffffff;
+  position: absolute;
+  background-color: rgba(48, 48, 48, 0.95);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.works .shuffle-img .works-description .description-wrapper {
+  padding: 50px;
+}
+.works .shuffle-img .works-description .description-wrapper h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.works .shuffle-img .works-description .description-wrapper p {
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+.works .shuffle-img .works-description .description-wrapper a {
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+}
+.works .shuffle-img .works-description .description-wrapper a:hover {
+  text-decoration: none;
+  background-color: #15c76c;
+  border: 2px solid #009e4e;
+}
 
 strong {
   color: #15c76c;
