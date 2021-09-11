@@ -16314,6 +16314,9 @@ body {
   color: #e9e9e9;
 }
 
+.works {
+  padding-bottom: 0;
+}
 .works .header {
   margin-bottom: 80px;
 }
@@ -16418,6 +16421,55 @@ body {
   text-decoration: none;
   background-color: #15c76c;
   border: 2px solid #009e4e;
+}
+
+.testimonials {
+  background-color: #f8fafc;
+  padding: 140px;
+}
+.testimonials .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.testimonials .title h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.testimonials .carousel-wrapper h3 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.testimonials .carousel-wrapper p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 1.8;
+  word-spacing: 1.5px;
+}
+.testimonials .carousel-wrapper ol {
+  position: relative;
+  justify-content: flex-start;
+  margin: 0;
+  margin-top: 10px;
+}
+.testimonials .carousel-wrapper ol li {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 3px;
+}
+.testimonials .carousel-wrapper ol li:nth-of-type(1) {
+  background-image: url("https://picsum.photos/id/1074/100/100");
+}
+.testimonials .carousel-wrapper ol li:nth-of-type(2) {
+  background-image: url("https://picsum.photos/id/1005/100/100");
+}
+.testimonials .carousel-wrapper ol li:nth-of-type(3) {
+  background-image: url("https://picsum.photos/id/1025/100/100");
 }
 
 strong {

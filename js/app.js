@@ -34,4 +34,5 @@ $(document).ready(function () {
         $(this).children('.works-description').hide(200);
     });
 
+    // $('.carousel').carousel()
 });
