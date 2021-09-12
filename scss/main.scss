@@ -299,6 +299,7 @@ body {
 .testimonials {
     background-color: #f8fafc;
     padding: 140px;
+    padding-bottom: 200px;
 
     .title {
         display: flex;
@@ -355,6 +356,87 @@ body {
     }
 }
 // Testimontials End
+
+// Contact Start
+
+.contact {
+    position: relative;
+    padding-bottom: 10px;
+    .get-in-touch {
+        background-color: $green;
+        padding: 40px;
+        position: relative;
+        top: -130px;
+        border-radius: 15px;
+        margin-bottom: -40px;
+
+        h3 {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        p {
+            font-weight: 600;
+            word-spacing: 1.5px;
+            letter-spacing: 1.8;
+        }
+
+        a {
+            border: 2px solid $dark;
+            color: $dark;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .5s ease;
+
+            &:hover {
+                background-color: $white;
+                color: $green;
+                border-color: $white;
+            }
+        }
+        .row {
+            align-items: center;
+        }
+    }
+
+    .footer {
+        .icons {
+            li {
+                font-size: 30px;
+                margin: 0 20px;
+                padding: 10px;
+                width: 30px;
+                height: 30px;
+
+                a {
+                    color: $dark;
+                    text-decoration: none;
+                    transition: color .5s ease;
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+        .copyrights{
+            margin-top: 60px;
+            font-size: 14px;
+            a {
+                color: $dark;
+                text-decoration: none;
+                display: inline-block;
+                transition: background .5s ease;
+                &:hover {
+                    background: $green;
+                }
+            }
+        }
+    }
+}
+
+// Contact End
 
 
 // my Framework
