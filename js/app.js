@@ -5,7 +5,9 @@ $(document).ready(function () {
     var windowHeight = $(window).height(),
         navHeight = $('.navbar').innerHeight();
 
-    $('.landing-page').height(windowHeight - navHeight);
+    // $('.landing-page').height();
+    $('.landing-page').css('min-height', windowHeight - navHeight);
+
 
 
     // shuffle images

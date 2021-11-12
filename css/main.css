@@ -16076,6 +16076,9 @@ body {
   height: 2400px;
 }
 
+.navbar {
+  padding: 30px;
+}
 .navbar li.nav-item {
   margin-left: 30px;
 }
@@ -16087,10 +16090,28 @@ body {
   color: #FFAB73;
 }
 
+.landing-page {
+  padding: 0;
+}
+.landing-page .custom-container {
+  display: flex;
+  align-items: center;
+}
+.landing-page .row {
+  width: 100%;
+}
 .landing-page .row > div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.landing-page .row .svg-picture {
+  padding-right: 30px;
+  padding-left: 0;
+}
+.landing-page .row .welcome {
+  padding-left: 30px;
+  padding-right: 0px;
 }
 .landing-page .row .welcome > div {
   max-width: 700px;

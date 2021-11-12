@@ -13,6 +13,7 @@ body {
 
 // Navbar start
 .navbar {
+    padding: 30px;
 
     li.nav-item {
         margin-left: 30px;
@@ -32,14 +33,31 @@ body {
 
 // Landing page Start
 .landing-page {
+    padding: 0;
+    .custom-container {
+
+        display: flex;
+        align-items: center;
+    }
+
     .row {
+        width: 100%;
+
         >div {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
+        .svg-picture {
+            padding-right: 30px;
+            padding-left: 0;
+        }
+
         .welcome {
+            padding-left: 30px;
+            padding-right: 0px;
+
             >div {
                 max-width: 700px;
 
