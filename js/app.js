@@ -51,10 +51,13 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
 
         if (dataClass == 'all') {
-            $('.shuffle-img > .row > div').css('opacity', '1');
+            // $('.shuffle-img > .row > div').css('opacity', '1');
+            $('.shuffle-img > .row > div').removeClass('opacity');
         } else {
-            $('.shuffle-img > .row > div').css('opacity', '.08');
-            $(dataClass).css('opacity', '1');
+            $('.shuffle-img > .row > div').addClass('opacity');
+            // $('.shuffle-img > .row > div').css('opacity', '.08');
+            // $(dataClass).css('opacity', '1');
+            $(dataClass).removeClass('opacity');
         }
 
     });
@@ -62,12 +65,12 @@ $(document).ready(function () {
 
     // Show Description of works 
     $('.works-item').mouseenter(function () {
-        $(this).children('.works-description').show(200);
+        $(this).children('.works-description').fadeIn();
 
     });
 
     $('.works-item').mouseleave(function () {
-        $(this).children('.works-description').hide(200);
+        $(this).children('.works-description').fadeOut();
     });
 
 
