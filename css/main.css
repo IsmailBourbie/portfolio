@@ -16085,6 +16085,25 @@ body {
   background-color: #fff;
   transition: top 0.5s ease-in-out;
 }
+.navbar a.logo > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.navbar a.logo .logo-img img {
+  width: 60px;
+  border-radius: 50%;
+}
+.navbar a.logo .logo-content {
+  padding-left: 15px;
+}
+.navbar a.logo .logo-content h5 {
+  margin: 0;
+  font-size: 16px;
+}
+.navbar a.logo .logo-content p {
+  font-size: 14px;
+  margin: 0;
+}
 .navbar li.nav-item {
   margin-left: 30px;
 }
@@ -16156,10 +16175,15 @@ body {
 .landing-page .row .welcome > div a {
   padding: 15px 30px;
   color: #FFAB73;
-  font-size: 20px;
   border: 2px solid #FFAB73;
   border-radius: 999px;
   font-weight: bold;
+  letter-spacing: 3px;
+}
+.landing-page .row .welcome > div a:hover {
+  background-color: #FFAB73;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 .landing-page .row .welcome > div ul {
   margin-top: 50px;

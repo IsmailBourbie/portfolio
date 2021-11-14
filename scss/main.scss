@@ -21,6 +21,35 @@ body {
     background-color: #fff;
     transition: top .5s ease-in-out;
 
+    a.logo {
+        >div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .logo-img {
+
+            img {
+                width: 60px;
+                border-radius: 50%;
+            }
+        }
+
+        .logo-content {
+            padding-left: 15px;
+
+            h5 {
+                margin: 0;
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+    }
+
 
     li.nav-item {
         margin-left: 30px;
@@ -109,10 +138,16 @@ body {
                 a {
                     padding: 15px 30px;
                     color: $primary;
-                    font-size: 20px;
                     border: 2px solid $primary;
                     border-radius: 999px;
                     font-weight: bold;
+                    letter-spacing: 3px;
+
+                    &:hover {
+                        background-color: $orange;
+                        color: $white;
+                        transition: all .3s ease-in-out;
+                    }
                 }
 
                 ul {

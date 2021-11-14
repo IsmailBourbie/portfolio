@@ -25,7 +25,7 @@ $(document).ready(function () {
             if (lastScrolTop > scrollTop) {
                 navbarElement.css({ top: '0px' })
             } else {
-                navbarElement.css({ top: '-80px' })
+                navbarElement.css({ top: '-110px' })
             }
         } else {
             navbarElement.removeClass("navbar-scrolled");
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 
     // Smooth scroling
-    $('.nav-link').click(function () {
+    $('.nav-link, .read-more').click(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
