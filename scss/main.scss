@@ -13,20 +13,45 @@ body {
 
 // Navbar start
 .navbar {
-    padding: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px;
+    background-color: #fff;
+    transition: top .5s ease-in-out;
+
 
     li.nav-item {
         margin-left: 30px;
 
         a.nav-link {
             color: $dark;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 5px;
+                width: 0;
+                height: 2px;
+                background-color: $orange;
+                -webkit-transition: width .25s ease-in-out;
+                transition: width .25s ease-in-out;
+            }
 
             &:hover {
-                opacity: .8;
-                color: $orange;
+                &::before {
+                    width: 100%;
+                }
             }
         }
     }
+}
+
+.navbar-scrolled {
+    box-shadow: 0px 1px 20px 0px rgba(46, 61, 73, 0.2);
 }
 
 // Navbar End
@@ -34,6 +59,7 @@ body {
 // Landing page Start
 .landing-page {
     padding: 0;
+
     .custom-container {
 
         display: flex;
