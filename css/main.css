@@ -16071,9 +16071,66 @@ readers do not read off random characters that represent icons */
 }
 
 body {
+  overflow: hidden;
   color: #161a1d;
   font-family: "Raleway", sans-serif;
   height: 2400px;
+}
+
+/*
+==========================================
+    Preloader
+==========================================
+*/
+.preloader {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader .loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  background: #FFAB73;
+  color: #FFAB73;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+.preloader .loader::after, .preloader .loader::before {
+  content: "";
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: #FFAB73;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.45s linear infinite alternate;
+}
+.preloader .loader::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+@keyframes animloader {
+  0% {
+    height: 48px;
+  }
+  100% {
+    height: 4px;
+  }
 }
 
 .navbar {

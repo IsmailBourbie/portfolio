@@ -1,7 +1,13 @@
 $(document).ready(function () {
 
 
-
+    // Preloader
+    $(window).on('load', function () {
+        setTimeout(function () {
+            $(".preloader").fadeOut('slow');
+            $('body').css('overflow', 'auto');
+        }, 3000)
+    });
 
     // on reload page check the scroll
     if ($(window).scrollTop() >= 470) {
