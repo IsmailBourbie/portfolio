@@ -15,9 +15,6 @@ $(document).ready(function () {
     } else {
         $("nav.navbar").removeClass("navbar-scrolled");
     }
-    // else if (lastScrolTop > scrollTop) {
-    //     navbarElement.animate({ top: "0" }, 30);
-    // }
 
     // On scroll show the nav bar
     let lastScrolTop = 0;
@@ -43,10 +40,14 @@ $(document).ready(function () {
 
     // Landing page height
 
-    var windowHeight = $(window).height();
+    let windowHeight = $(window).height(),
+        navbarHeight = $('nav').outerHeight();
 
     // $('.landing-page').height();
-    $('.landing-page').css('min-height', windowHeight);
+    $('.landing-page').css({
+        'min-height': windowHeight - navbarHeight,
+        'margin-top': navbarHeight
+    });
 
 
 
