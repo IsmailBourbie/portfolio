@@ -1,13 +1,12 @@
 @import "mixins";
 @import "bootstrap-custom";
 @import "fontawesome-custom";
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700;900&display=swap');
 
 body {
     overflow: hidden;
     color: $dark;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'bitter', serif;
     height: 2400px;
 
 }
@@ -187,7 +186,6 @@ body {
                     font-weight: bold;
                     margin: 0;
                     letter-spacing: 1px;
-                    font-family: 'Kanit', sans-serif;
                 }
 
                 h3 {
@@ -197,8 +195,9 @@ body {
                 }
 
                 p {
+                    font-size: 20px;
                     color: #8c8c8e;
-                    margin: 40px 0 40px 10px;
+                    margin: 20px 0 40px;
                 }
 
                 a {
@@ -253,10 +252,6 @@ body {
 
             h4 {
                 margin-bottom: 30px;
-            }
-
-            p {
-                font-size: 14px
             }
 
             .my-cv {
@@ -320,8 +315,12 @@ body {
                 margin-bottom: 30px;
                 box-shadow: 0 0 2px #e9e9e9;
 
+                > h4 {
+                    margin-bottom: 40px;
+                }
                 >.row {
                     margin-bottom: 15px;
+                    justify-content: space-between;
 
                     >div {
                         padding: 0;
@@ -331,11 +330,12 @@ body {
 
             p {
                 margin-bottom: 5px;
+                font-size: 14px;                
             }
 
             h5 {
-                font-size: 14px;
-                font-weight: bold;
+                font-size: 16px;
+                font-weight: 600;
             }
 
             .col-8 {
@@ -347,13 +347,14 @@ body {
                 }
 
                 h4 {
-                    font-size: 15px;
+                    font-size: 16px;
                     margin-bottom: 10px;
-                    color: black;
+                    letter-spacing: 1px;
+                    word-spacing: 2px;
                 }
 
                 p {
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             }
         }
