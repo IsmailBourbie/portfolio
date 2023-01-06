@@ -2,6 +2,8 @@
 
 A simple and minimalist template designed for developers who want to show their portfolio.
 
+![127 0 0 1_8080_(laptop) (1)](https://user-images.githubusercontent.com/32592422/211056114-d81fb544-3db4-4f2b-ad16-7135e8aeda30.png)
+
 
 ## Features :pushpin:
 
